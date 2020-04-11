@@ -41,6 +41,10 @@ p {
     color: #fff;
 }
 
+.bg-primary {
+    background: #93cb52;
+    color: #fff;
+}
 
 .text-center {
     text-align: center;
@@ -73,6 +77,7 @@ p {
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 5px;
+    justify-content: center;
 }
 
 .btn:hover {
@@ -131,8 +136,9 @@ p {
 /* Showcase */
 
 #showcase {
-    background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+    background: #333 url('../img/showcase.jpg') no-repeat fixed center center/cover;
     color: #fff;
+
     height: 100vh;
 }
 
@@ -146,7 +152,7 @@ p {
     padding: 0 2rem;
     /* Overlay */
     position: absolute;
-    top: 60px;
+    top: 65px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -194,4 +200,27 @@ p {
     display: block;
     margin: auto;
     width: 60%;
+}
+
+/* Section Contact */
+#contact {
+    display: flex;
+}
+
+#contact .map, #contact .contact-form{
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
 }
