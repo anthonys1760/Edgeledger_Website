@@ -224,3 +224,8 @@ p {
     width: 100%;
     padding: 0.5rem;
 }
+
+.newButton {
+    position: relative;
+    left: 8px;
+}
